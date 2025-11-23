@@ -2,19 +2,15 @@ export const prerender = false;
 
 import type { APIRoute } from "astro";
 
-import { redis } from "@/database/redis";
-import {
-  createRepoViewsKey,
-  createStatsKey,
-  createUserRepoViewsKey,
-} from "@/lib/keys";
 import { generateBadge } from "@/lib/badge";
+import { incrementRepoViews } from "@/services/repo.service";
+import { incrementUserRepoViews } from "@/services/user.service";
+import { incrementTotal } from "@/services/stats.service";
 
 export const GET: APIRoute = async ({ params, request }) => {
   const username = params.username;
   const repo = params.repo;
-  const key = createRepoViewsKey(username, repo);
-  const views = await redis.incr(key);
+  const views = await incrementRepoViews(username, repo);
 
   const { searchParams } = new URL(request.url);
   const style = searchParams.get("style");
@@ -27,10 +23,7 @@ export const GET: APIRoute = async ({ params, request }) => {
     labelColor,
   });
 
-  const statsKey = createStatsKey("views");
-  const allReposKey = createUserRepoViewsKey(username);
-
-  await Promise.all([redis.incr(statsKey), redis.incr(allReposKey)]);
+  await Promise.all([incrementUserRepoViews(username), incrementTotal()]);
 
   return new Response(badge, {
     headers: {
