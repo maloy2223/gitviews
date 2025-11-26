@@ -1,4 +1,6 @@
 ---
+import { Silk } from "./silk";
+
 interface Props {
   views: number;
 }
@@ -7,6 +9,11 @@ const { views } = Astro.props;
 ---
 
 <section class="hero">
+  <div class="effect">
+    <div class="silk"><Silk client:load color="#ffffff" /></div>
+    <div class="overlay"></div>
+  </div>
+
   <div class="logo-wrapper">
     <img src="/logo.svg" alt="GitViews Logo" class="logo" />
   </div>
@@ -24,8 +31,53 @@ const { views } = Astro.props;
 
 <style>
   .hero {
-    padding: 180px 0 90px;
+    padding: 140px 0 70px;
     text-align: center;
+    overflow: hidden;
+    position: relative;
+
+    & .effect {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 220px;
+      border-radius: 32px 32px 0 0;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 80%;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--color-neutral-500),
+          transparent
+        );
+      }
+
+      & .silk {
+        position: absolute;
+        inset: 0;
+        mask-image: linear-gradient(#000, transparent);
+      }
+
+      & .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(9 9 11 / 90%);
+      }
+    }
 
     & .logo-wrapper {
       margin: 0 auto 36px;
