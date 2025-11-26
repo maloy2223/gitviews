@@ -7,34 +7,59 @@ const { views } = Astro.props;
 ---
 
 <section class="hero">
-  <img src="/logo.svg" alt="GitViews Logo" class="logo" />
-  <h1 class="title">GitViews</h1>
-  <p class="desc">Simple GitHub view counter.</p>
+  <div class="logo-wrapper">
+    <img src="/logo.svg" alt="GitViews Logo" class="logo" />
+  </div>
+
+  <h1 class="title">Simple GitHub<br />Profile and Repo<br />View Counter</h1>
+  <p class="desc">Completely Free & Open-Source.</p>
   <p class="views">
-    <span>{views.toString().padStart(7, 0)}</span> views counted.
+    <span>{views.toString().padStart(7, "0")}</span> views counted.
   </p>
+
   <div class="links">
-    <a href="https://github.com/remvze/gitviews">(github)</a>
+    <a href="https://github.com/remvze/gitviews">GitHub</a>
   </div>
 </section>
 
 <style>
   .hero {
     padding: 180px 0 90px;
+    text-align: center;
 
-    & .logo {
-      display: block;
-      width: 24px;
-      aspect-ratio: 1/1;
-      margin-bottom: 36px;
+    & .logo-wrapper {
+      margin: 0 auto 36px;
+      width: 54px;
+      height: 54px;
+      border-radius: 20px;
+      background: linear-gradient(
+        var(--color-neutral-100),
+        var(--color-neutral-50)
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--color-neutral-200);
+      box-shadow: inset 0 1px 0 var(--color-neutral-500);
+
+      & .logo {
+        display: block;
+        width: 50%;
+        aspect-ratio: 1/1;
+      }
     }
 
     & .title {
       font-weight: 500;
-      margin-bottom: 4px;
+      margin-bottom: 24px;
+      font-size: var(--font-2xlg);
+      line-height: 1.1;
+      font-weight: 700;
+      font-family: var(--font-display);
     }
 
     & .desc {
+      font-size: var(--font-sm);
       color: var(--color-foreground-subtle);
     }
 
@@ -44,19 +69,24 @@ const { views } = Astro.props;
       color: var(--color-foreground-subtler);
 
       & span {
-        color: var(--color-foreground-subtle);
+        color: var(--color-foreground);
         font-family: var(--font-mono);
       }
     }
 
     & .links {
-      margin-top: 16px;
+      margin-top: 24px;
 
       & a {
-        font-size: var(--font-xsm);
-        color: var(--color-foreground);
+        font-size: var(--font-sm);
+        color: var(--color-neutral-50);
         font-weight: 500;
         text-decoration: none;
+        display: inline-flex;
+        padding: 8px 24px;
+        border-radius: 999px;
+        background: #c0eb75;
+        box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.25);
       }
     }
   }
