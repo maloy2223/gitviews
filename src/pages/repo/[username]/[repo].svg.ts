@@ -8,8 +8,8 @@ import { incrementUserRepoViews } from "@/services/user.service";
 import { incrementTotal } from "@/services/stats.service";
 
 export const GET: APIRoute = async ({ params, request }) => {
-  const username = params.username;
-  const repo = params.repo;
+  const username = params.username!;
+  const repo = params.repo!;
   const views = await incrementRepoViews(username, repo);
 
   const { searchParams } = new URL(request.url);
@@ -17,7 +17,7 @@ export const GET: APIRoute = async ({ params, request }) => {
   const labelColor = searchParams.get("label-color");
   const color = searchParams.get("color");
 
-  const badge = generateBadge("Repo Views", String(views), {
+  const badge = generateBadge("Repo Views", String(views.toLocaleString()), {
     style,
     color,
     labelColor,
