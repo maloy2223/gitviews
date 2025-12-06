@@ -2,7 +2,7 @@
 
 > Super simple GitHub view counter.
 
-![GitHub Repo Views](https://gitviews.com/repo/remvze/gitviews.svg)
+![GitHub Repo Views](https://gitviews.com/repo/remvze/gitviews.svg?color=%23f76707&label-color=black)
 
 ---
 
