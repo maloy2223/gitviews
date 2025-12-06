@@ -65,6 +65,25 @@ https://gitviews.com/user/<your-github-username>/repos.svg
 
 ---
 
+## Migrating From Another Counter
+
+The `base` parameter allows you to add an existing number to the live view count. This is useful if you're migrating from another service and want to preserve your previous total.
+
+**Important:**
+
+- GitViews does not store the sum, only the real count.
+- The `base` value must remain in the URL permanently to keep the adjusted total correct.
+
+**Example:**
+
+If your previous tracker recorded 3,200 views, you can carry that over:
+
+```
+https://gitviews.com/repo/<user>/<repo>.svg?base=3200
+```
+
+---
+
 ## Customization 🎨
 
 GitViews badges support several customization parameters, allowing you to style badges to match your theme.
